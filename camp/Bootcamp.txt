@@ -1,0 +1,177 @@
+1. Asciiiii
+
+public class Ascii {
+public static void main(String[] args)
+{
+int i;
+
+for(i = 97; i <= 122; i++)
+{
+System.out.println(" The ASCII value of " + (char)i + "  =  " + i);
+}
+}
+}
+---------------------------------------------------------------------------------
+9. fibanocci series
+
+import java.util.Scanner;
+
+public class Fibanocci {
+	public static void main(String args[])  
+	{    
+	int n;
+	System.out.println("n=");
+	Scanner sc=new Scanner (System.in);
+	int a=1;
+	int b=0;
+	n=sc.nextInt();
+	
+	for(int i=0;i<n;i++)
+	{
+		System.out.print(b);
+		b=a+b;
+		a=b-a;
+		if(i<=n-2)
+		{
+			System.out.print(" ");
+		}
+
+	}
+}
+}
+
+---------------------------------------------------------------------------
+10. swap
+
+
+
+import java.util.Scanner;
+public class Swap {
+   public static void main(String args[])
+   {
+       int x,y;
+       Scanner sc=new Scanner(System.in);
+       System.out.println("Input two integers: ");
+       x=sc.nextInt();
+       y=sc.nextInt();
+       System.out.println("Pre swap: "+x+" "+y);
+       x = x+y;
+       y=x-y;
+       x=x-y;
+       System.out.println("Post swap: " +x+" "+y);
+   }
+}
+
+
+-----------------------------------------------------------------------
+
+6th years days and weeks
+
+
+
+
+
+   public static void main(String args[])
+   {
+       int m, year, week, day;
+       Scanner s = new Scanner(System.in);
+       System.out.print("Enter the number of days:");
+       m = s.nextInt();
+       year = m / 365;
+       m = m % 365;
+       System.out.println("No. of years:"+year);
+       week = m / 7;
+       m = m % 7;
+       System.out.println("No. of weeks:"+week);
+       day = m;
+       System.out.println("No. of days:"+day);
+   }
+}
+
+---------------------------------------------------------------------
+8th
+
+
+
+ public static void main(String args[])
+{
+      System.out.println("Command line arguments are: "+args[0]+" "+args[1]);
+     int dividend=Integer.parseInt(args[0]);
+     int divisor=Integer.parseInt(args[1]);
+      int quotient = dividend / divisor;
+      int remainder = dividend % divisor;
+      System.out.println("Quotient = " + quotient);
+      System.out.println("Remainder = " + remainder);
+
+  }
+
+------------------------------------------------------------------------
+7th
+
+
+
+import java.util.Scanner;
+
+public class Vowelsandconso {
+	 public static void main(String[ ] arg)
+	   {
+		boolean isVowel=false;;
+		Scanner scanner=new Scanner(System.in);
+		System.out.println("Input an alphabet : ");
+		char ch=scanner.next().charAt(0); 
+		scanner.close();
+		switch(ch)
+		{
+		   case 'a' :
+		   case 'e' :
+	    	   case 'i' :
+		   case 'o' :
+		   case 'u' :
+		   case 'A' :
+		   case 'E' :
+		   case 'I' :
+		   case 'O' :
+		   case 'U' : isVowel = true;
+		}
+		if(isVowel == true) {
+		   System.out.println("Input character is vowel");
+		}
+		else {
+		   if((ch>='a'&&ch<='z')||(ch>='A'&&ch<='Z'))
+			System.out.println("Input Character is Consonant");
+		   else
+			System.out.println("Invalid data");		
+	        }
+	   }
+	}
+---------------------------------------------------------------------------------------------------
+2.
+youngest and oldest
+
+
+import java.util.Scanner;
+
+public class YoungestOldest
+{
+    public static void main(String[] args)
+    {
+        int num1, num2, num3, result, temp;
+        Scanner scanner = new Scanner(System.in);
+        System.out.print("");
+        num1 = scanner.nextInt();
+        System.out.print("");
+        num2 = scanner.nextInt();
+        System.out.print("");
+        num3 = scanner.nextInt();
+        scanner.close();
+        temp = num1 < num2 ? num2:num1;
+        result = num3>  temp ? num3:temp;
+        System.out.println(" Older Friend: "+result+"Years");
+        temp = num1 < num2 ? num1:num2;
+        result = num3 < temp ? num3:temp;
+        System.out.println(" Younger Friend :"+result+"Years");
+    }
+}
+--------------------------------------------------------------------------------------------------
+
+	  
